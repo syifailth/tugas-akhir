@@ -1,0 +1,139 @@
+/* Banner */
+.banner{
+    /* background-color: #395144; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/home.jpg') no-repeat center center/cover;
+    height: 690px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #395144;
+}
+
+.banner-title{
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3em;
+}
+
+.banner-desc{
+    font-size: 1.5em;
+    color: #F0EBCE;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+/* Body & Layout */
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #395144;
+    
+}
+
+.container { 
+    max-width: 90%; 
+    margin: auto; 
+    padding: 25px; 
+}
+
+/* Heading */
+h1 { 
+    font-size: 2em; 
+    color: #F0EBCE;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-frame {
+    width: 640px;
+    height: 480px;
+    background-color: #AA8B56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #F0EBCE;
+}
+
+/* Button Detection */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.btn { 
+    padding: 10px 15px; 
+    margin: 5px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 1em;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover { 
+    opacity: 0.6; 
+}
+
+.start, .capture, .stop{
+    background: #F0EBCE; 
+    color: #4E6C50;
+    font-weight: bold; 
+}
+
+/* Responsive Web untuk Mobile */
+@media (max-width: 600px) {
+    .video-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-frame img {
+        width: 100%;
+        height: 100vh; 
+        object-fit: none;
+    }
+
+    h1 { 
+        font-size: 1.5em; 
+    }
+
+    .btn a{
+        width: 50%;
+        font-size: 1em;
+    }
+    
+    .banner-desc{
+        font-size: 1em;
+        margin: 2rem;
+    }
+
+    .banner-title{
+        font-size: 2em;
+        padding-top: 3em;
+    }
+}
