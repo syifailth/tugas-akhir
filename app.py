@@ -11,7 +11,7 @@ IMAGE_FOLDER = "static/images"
 os.makedirs(IMAGE_FOLDER, exist_ok=True)
 
 # Inisialisasi YOLOv8
-model_path = "yolov8_model/v8s-3a.pt"
+model_path = "yolov8_model/best.pt"
 detector = YOLOv8Detector(model_path)
 
 camera = None
